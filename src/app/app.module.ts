@@ -12,6 +12,7 @@ import { BannerComponent } from './views/banner/banner.component';
 import { PcgamesComponent } from './views/pcgames/pcgames.component';
 import { GaleriaComponent } from './views/galeria/galeria.component';
 import { LoginComponent } from './views/login/login.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -32,6 +33,7 @@ import { LoginComponent } from './views/login/login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     BrowserAnimationsModule,
    
   

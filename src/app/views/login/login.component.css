@@ -488,6 +488,9 @@ center .content .text{
 .nome-login{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    margin-left: 50px;
+   
+    
 }
 .tela-login{
     background-color: rgba(0, 0 , 0, 0.8);
@@ -498,7 +501,7 @@ center .content .text{
     padding: 50px;
     border-radius: 15px;
     color: white;
-    margin-top: 30px;
+    margin-top: 70px;
 
 
 }
@@ -545,6 +548,15 @@ center .content .text{
 .login-logo{
     margin: 5px;
     
+}
+#senha{
+  display:block;
+  
+}
+#email{
+    display: block;
+    
+   
 }
 
 @media screen and (max-width:768px) {

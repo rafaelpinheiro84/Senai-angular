@@ -1,17 +1,36 @@
-
-    <a class="login-logo" id="logo" href="index.html"><img src="img/logo.png" alt=""></a>
-
+<!---Implementando formulário de login em Angular-->
 
 <div class="tela-login">
-    <h1 class="nome-login">Login</h1>
-    <input class="logi-nome" type="text" placeholder="Nome">
-    <br><br>
-    <input class="senha-login" type="password" placeholder="Senha">
-    <br><br>
-    <a href="index.html"><button class="login-enviar">Enviar</button></a>
-    <a href="#">
-        <p class="cadastrar">Cadastre-se</p>
-    </a>
+    <form #userForm="ngForm" (ngSubmit)="onSubmit()">
+        <h1 class="nome-login">Login</h1>
+        <br><br>
+        <label for="email">Email</label>
+        <input  type="emmail" id="email" name="email" [(ngModel)]="userModel.email">
+        <br><br>
+        <label for="senha">senha:</label>
+        <input   type="password" id="senha" name="senha" [(ngModel)]="userModel.senha">
+           <br><br>
+           <button class="login-enviar" type="submit">Enviar</button>
+           <a href="#">
+            <p class="cadastrar">Cadastre-se</p>
+        </a>
+
+    </form>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
