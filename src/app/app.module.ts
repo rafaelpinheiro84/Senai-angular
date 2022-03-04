@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './views/home/home.component';
 import { HeaderComponent } from './views/header/header.component';
 import { JogosComponent } from './views/jogos/jogos.component';
@@ -12,8 +13,8 @@ import { BannerComponent } from './views/banner/banner.component';
 import { PcgamesComponent } from './views/pcgames/pcgames.component';
 import { GaleriaComponent } from './views/galeria/galeria.component';
 import { LoginComponent } from './views/login/login.component';
-import { FormsModule } from '@angular/forms';
-
+import { CadastroComponent } from './views/cadastro/cadastro.component';
+import { NotFoundComponent } from './views/not-found/not-found.component';
 
 
 
@@ -28,13 +29,15 @@ import { FormsModule } from '@angular/forms';
     PcgamesComponent,
     GaleriaComponent,
     LoginComponent,
+    CadastroComponent,
+    NotFoundComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
-    BrowserAnimationsModule,
    
   
   ],
